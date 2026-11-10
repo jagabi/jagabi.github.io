@@ -11,8 +11,6 @@
 
   <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Raleway:700&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Raleway:600&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" type="text/css" href="stylesheet.css">
@@ -50,7 +48,7 @@
       height: 100%;
       object-fit: contain;
     }
-    #bibtex-toast {
+    #toast {
       display: none;
       position: fixed;
       bottom: 30px;
@@ -352,6 +350,8 @@
                   <span style="font-size:13px;color:#555;">Advisor: <a href="https://scholar.google.com/citations?user=U2eVyDMAAAAJ&hl=en">Dr. Heyoung Yang</a></span>
                   <br>
                   <span style="font-size:13px;color:#888;">Feb. 2025 – Present</span>
+                  <br>
+                  <a href="https://www.kisti.re.kr/">Homepage</a>
                   <p></p>
                 </td>
               </tr>
@@ -368,11 +368,13 @@
                 <td style="padding-left:10px;padding-top:8px;padding-bottom:8px;width:65%;vertical-align:middle">
                   <strong>InterX</strong> &nbsp; <em>(Internship)</em>
                   <br>
-                  <span style="font-size:13px;color:#555;">[Project description]</span>
+                  <span style="font-size:13px;color:#555;">AI Research Center</span>
                   <br>
                   <span style="font-size:13px;color:#555;">Advisor: <a href="https://scholar.google.com/citations?user=ttb-2xoAAAAJ&hl=en">Dr. Qing Tang</a></span>
                   <br>
                   <span style="font-size:13px;color:#888;">Sep. 2024 – Feb. 2025</span>
+                  <br>
+                  <a href="https://interxlab.com/">Homepage</a>
                   <p></p>
                 </td>
               </tr>
@@ -392,6 +394,8 @@
                   <span style="font-size:13px;color:#555;">Advisor: <a href="https://scholar.google.com/citations?user=Mjue0BkAAAAJ&hl=ko">Prof. Hyunmin Jung</a></span>
                   <br>
                   <span style="font-size:13px;color:#888;">Dec. 2023 – Aug. 2024</span>
+                  <br>
+                  <a href="https://immedia.seoultech.ac.kr/">Homepage</a>
                   <p></p>
                 </td>
               </tr>
@@ -590,12 +594,12 @@
       </tr>
     </tbody>
   </table>
-  <div id="bibtex-toast">Email copied!</div>
+  <div id="toast">Email copied!</div>
 
   <script>
     function copyEmail() {
       navigator.clipboard.writeText('yundong0913@gmail.com').then(() => {
-        const toast = document.getElementById('bibtex-toast');
+        const toast = document.getElementById('toast');
         toast.style.display = 'block';
         setTimeout(() => { toast.style.display = 'none'; }, 2000);
       });
